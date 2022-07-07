@@ -129,16 +129,16 @@ bindsym $mod+Shift+S exec spectacle -r
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "1: Terminal"
-set $ws2 "2: Chrome I"
-set $ws3 "3: Chrome II"
-set $ws4 "4: IDE"
-set $ws5 "5"
-set $ws6 "6"
-set $ws7 "7"
-set $ws8 "8"
-set $ws9 "9"
-set $ws10 "10"
+set $ws1 "1: "
+set $ws2 "2: "
+set $ws3 "3: " 
+set $ws4 "4: "
+set $ws5 "5: "
+set $ws6 "6: 六"
+set $ws7 "7: 七"
+set $ws8 "8: 八"
+set $ws9 "9: 九"
+set $ws10 "10: "
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1 
@@ -203,7 +203,7 @@ mode "resize" {
 }
 
 bindsym $mod+r mode "resize"
-
+# bindsym $mod+shift+x exec betterlockscreen -l dim
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 #bar {
@@ -251,9 +251,8 @@ exec_always --no-startup-id ibus-daemon -drxR
 exec_always --no-startup-id redshift -P -O 5000
 exec_always --no-startup-id /home/jiafengyu/monitor.sh
 exec_always --no-startup-id /home/jiafengyu/.config/polybar/launch.sh
-exec_always feh --bg-scale /home/jiafengyu/Desktop/Wallpapers/rocket.jpg
-# exec picom -f
+#exec_always feh --bg-scale /home/jiafengyu/Desktop/Wallpapers/rocket.jpg
+exec_always feh --bg-fill /home/jiafengyu/Desktop/Wallpapers/real_moon.jpg
 exec i3-sensible-terminal
 exec google-chrome-stable
-# exec_always /home/jiafengyu/external_disp.sh
-# exec_always picom -f
+#exec_always --no-startup-id /home/jiafengyu/external_disp.sh
