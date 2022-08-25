@@ -164,10 +164,11 @@ bindsym $mod+Shift+8 move container to workspace number $ws8
 bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
 
-assign [class="Google-chrome"] $ws2
+# assign [class="Google-chrome"] $ws2
 assign [class="discord"] $ws5
 assign [class="DrRacket"] $ws4
 # assign [class="Code"] $ws4
+for_window [class="Alacritty"] fullscreen enable
 
 
 # reload the configuration file
@@ -248,11 +249,11 @@ bindsym XF86AudioPrev exec playerctl previous
 
 bindsym $mod+e+e+e exec --no-startup-id /home/jiafengyu/external_disp.sh
 exec_always --no-startup-id ibus-daemon -drxR
-exec_always --no-startup-id redshift -P -O 5000
+exec --no-startup-id redshift
 exec_always --no-startup-id /home/jiafengyu/monitor.sh
 exec_always --no-startup-id /home/jiafengyu/.config/polybar/launch.sh
 #exec_always feh --bg-scale /home/jiafengyu/Desktop/Wallpapers/rocket.jpg
 exec_always feh --bg-fill /home/jiafengyu/Desktop/Wallpapers/real_moon.jpg
 exec i3-sensible-terminal
-exec google-chrome-stable
+# exec google-chrome-stable
 #exec_always --no-startup-id /home/jiafengyu/external_disp.sh
