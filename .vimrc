@@ -1,7 +1,8 @@
 call plug#begin('~/.vim/plugged')
 " Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'jdhao/better-escape.vim'
-"Plug 'vim-airline/vim-airline'
+" Plug 'rust-lang/rust.vim'
+Plug 'vim-airline/vim-airline'
 " Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 set number
@@ -14,6 +15,7 @@ filetype on
 filetype plugin on
 filetype indent on 
 syntax on 
+filetype plugin indent on
 " Set shift width to 4 spaces.
 set shiftwidth=4
 
@@ -56,5 +58,3 @@ set hlsearch
 
 " Set the commands to save in history default number is 20.
 set history=1000
-
-" colorscheme onedark 
