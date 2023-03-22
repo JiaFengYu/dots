@@ -11,6 +11,13 @@ symbol = " "
 [python]
 symbol = " "
 
+[lua]
+symbol = '🌙'
+
+[memory_usage]
+disabled = true
+threshold = -1
+
 [character]
 error_symbol = "[❯](bold red)"
 success_symbol = "[❯](bold green)"
