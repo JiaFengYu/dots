@@ -55,7 +55,7 @@ disabled = true
 disabled = true
 
 [battery]
-discharging_symbol = "[  ](bold red)"
+discharging_symbol = "[ ](bold red)"
 charging_symbol = "[ ](bold green)"
 
 # [[battery.display]] # "bold red" style and discharging_symbol when capacity is between 0% and 10%
