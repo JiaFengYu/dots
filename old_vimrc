@@ -1,8 +1,10 @@
 call plug#begin('~/.vim/plugged')
 " Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'jdhao/better-escape.vim'
-" Plug 'rust-lang/rust.vim'
-Plug 'vim-airline/vim-airline'
+Plug 'rust-lang/rust.vim'
+Plug 'morhetz/gruvbox'
+" Plug 'ghifarit53/tokyonight-vim'
+" Plug 'vim-airline/vim-airline'
 " Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 set number
@@ -58,3 +60,10 @@ set hlsearch
 
 " Set the commands to save in history default number is 20.
 set history=1000
+
+set clipboard=unnamedplus
+
+" set termguicolors
+" colorscheme tokyonight
+set bg=dark
+" colorscheme gruvbox
