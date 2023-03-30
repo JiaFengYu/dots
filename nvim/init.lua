@@ -10,37 +10,34 @@ vim.call('plug#begin', '~/.config/nvim/plugged')
 -- vim.cmd('Plug "vim-airline/vim-airline"')
 vim.call('plug#end')
 
-vim.o.number = true
+vim.opt.number = true
 -- vim.g.airline#extensions#tabline#enabled = 1 -- Enable the list of buffers
 -- vim.g.airline_theme='badwolf'
--- vim.o.cursorline = true
--- vim.o.cursorcolumn = true
-vim.o.nocompatible = true
-vim.o.filetype = 'on'
-vim.o.filetype = 'plugin'
-vim.o.filetype = 'indent'
-vim.o.syntax = 'on'
-vim.o.guicursor = 'n-v-c-i:block'
-vim.o.clipboard = 'unnamedplus'
--- vim.o.filetype = 'plugin indent'
-vim.o.shiftwidth = 4 -- Set shift width to 4 spaces.
-vim.o.tabstop = 4 -- Set tab width to 4 columns.
-vim.o.expandtab = true -- Use space characters instead of tabs.
-vim.o.nobackup = true -- Do not save backup files.
-vim.o.scrolloff = 10 -- Do not let cursor scroll below or above N number of lines when scrolling.
-vim.o.wrap = false -- Do not wrap lines. Allow long lines to extend as far as the line goes.
-vim.o.incsearch = true -- While searching though a file incrementally highlight matching characters as you type.
-vim.o.ignorecase = true -- Ignore capital letters during search.
-vim.o.smartcase = true -- Override the ignorecase option if searching for capital letters. This will allow you to search specifically for capital letters.
-vim.o.showcmd = true -- Show partial command you type in the last line of the screen.
-vim.o.showmode = true -- Show the mode you are on the last line.
-vim.o.showmatch = true -- Show matching words during a search.
-vim.o.hlsearch = true -- Use highlighting when doing a search.
-vim.o.history = 1000 -- Set the commands to save in history default number is 20.
--- vim.o.termguicolors = true
--- vim.cmd('colorscheme tokyonight')
--- vim.o.bg = 'dark'
--- vim.cmd('colorscheme gruvbox')
+vim.opt.syntax = 'on'
+vim.opt.guicursor = 'n-v-c-i:block'
+vim.opt.clipboard = 'unnamedplus'
+-- vim.opt.filetype = 'plugin indent'
+vim.opt.filetype="on"
+vim.opt.filetype.indent="on"
+vim.opt.filetype.plugin="on"
+-- vim.opt.filetype.plugin.indent = "on" // on by default iirc
+vim.opt.syntax = "on"
+vim.opt.shiftwidth = 4 -- Set shift width to 4 spaces.
+vim.opt.tabstop = 4 -- Set tab width to 4 columns.
+vim.opt.expandtab = true -- Use space characters instead of tabs.
+-- vim.opt.nobackup = true -- Do not save backup files. //no such option?
+vim.opt.scrolloff = 10 -- Do not let cursor scroll below or above N number of lines when scrolling.
+vim.opt.wrap = false -- Do not wrap lines. Allow long lines to extend as far as the line goes.
+vim.opt.incsearch = true -- While searching though a file incrementally highlight matching characters as you type.
+vim.opt.ignorecase = true -- Ignore capital letters during search.
+vim.opt.smartcase = true -- Override the ignorecase option if searching for capital letters. This will allow you to search specifically for capital letters.
+vim.opt.showcmd = true -- Show partial command you type in the last line of the screen.
+vim.opt.showmode = true -- Show the mode you are on the last line.
+vim.opt.showmatch = true -- Show matching words during a search.
+vim.opt.hlsearch = true -- Use highlighting when doing a search.
+vim.opt.history = 1000 -- Set the commands to save in history default number is 20.
+-- let g:python_highlight_space_errors = 0
+-- vim.opt.termguicolors = true
 
 -- VIMTEX CONFIG
 -- Viewer options: One may configure the viewer either by specifying a built-in
