@@ -14,6 +14,10 @@ symbol = " "
 [lua]
 symbol = '🌙'
 
+[golang]
+format = 'via [Golang ($version) ](bold blue)'
+
+
 [memory_usage]
 disabled = true
 threshold = -1

@@ -146,4 +146,8 @@ configuration {
   }
 }
 //@theme "/usr/share/rofi/themes/gruvbox-dark-soft.rasi"
-@theme "/usr/share/rofi/themes/space.rasi"
+//@theme "/usr/share/rofi/themes/space.rasi"
+//@theme "/usr/share/rofi/themes/france.rasi"
+@theme "/usr/share/rofi/themes/late-night-girl.rasi"
+//@theme "/usr/share/rofi/themes/purple.rasi"
+
