@@ -36,6 +36,8 @@ vim.opt.showmode = true -- Show the mode you are on the last line.
 vim.opt.showmatch = true -- Show matching words during a search.
 vim.opt.hlsearch = true -- Use highlighting when doing a search.
 vim.opt.history = 1000 -- Set the commands to save in history default number is 20.
+vim.opt.scrolloff = 10
+vim.opt.sidescrolloff = 10
 -- let g:python_highlight_space_errors = 0
 -- vim.opt.termguicolors = true
 
