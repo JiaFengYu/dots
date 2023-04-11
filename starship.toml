@@ -3,6 +3,7 @@
 add_newline = false
 
 [c]
+detect_extensions = ['c', 'h', 'cpp', 'cc']
 symbol = "C/C++ "
 
 [rust]
