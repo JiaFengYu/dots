@@ -14,9 +14,11 @@ PS1='[\u@\h \W]\$ '
 
 . "$HOME/.cargo/env"
 eval "$(starship init bash)"
+eval "$(zoxide init bash)"
 
 # alias ls=exa
 alias ls='ls --color=auto'
+alias cd=z
 alias pdf=zathura
 alias vi=nvim
 alias vim=nvim
