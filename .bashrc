@@ -12,22 +12,27 @@ fi
 PS1='[\u@\h \W]\$ '
 
 
-. "$HOME/.cargo/env"
+source "$HOME/.cargo/env"
+source /usr/share/fzf/completion.bash
+source /usr/share/fzf/key-bindings.bash
 eval "$(starship init bash)"
 eval "$(zoxide init bash)"
 
-# alias ls=exa
+# alias ls=exa # exa slower...
 alias ls='ls --color=auto'
-alias cd=z
+alias ll='ls -l'
+alias la='ls -a'
+alias nf=neofetch
+alias cl=clear
 alias pdf=zathura
 alias vi=nvim
 alias vim=nvim
+alias cd=z
 alias cat=bat
 alias top=btm # this acronym...
-alias nf=neofetch
-alias cl=clear
 alias grep=rg
 alias find=fd
+#alias getpid="xprop _NET_WM_PID | sed 's/_NET_WM_PID(CARDINAL) = //' | ps `cat`"
 
 export PATH="~/.local/bin:$PATH"
 export PATH=$HOME/sys161/bin:$HOME/sys161/tools/bin:$PATH
