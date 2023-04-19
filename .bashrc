@@ -29,7 +29,7 @@ alias vi=nvim
 alias vim=nvim
 alias cd=z
 alias cat=bat
-alias top=btm # this acronym...
+alias top="btm --color gruvbox-light" # this acronym...
 alias grep=rg
 alias find=fd
 #alias getpid="xprop _NET_WM_PID | sed 's/_NET_WM_PID(CARDINAL) = //' | ps `cat`"
