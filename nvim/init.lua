@@ -2,7 +2,6 @@ local Plug = vim.fn['plug#']
 vim.call('plug#begin', '~/.config/nvim/plugged')
     Plug 'neovim/nvim-lspconfig'
 -- Plug("neoclide/coc.nvim", { branch = "release" })
-    Plug "jdhao/better-escape.vim"
     Plug "rust-lang/rust.vim"
     Plug "lervag/vimtex"
     --Plug "-hui/fidget.nvim"
@@ -50,6 +49,10 @@ vim.opt.sidescrolloff = 10
 -- let g:python_highlight_space_errors = 0
 -- vim.opt.termguicolors = true
 
+-- KEYMAPS 
+--vim.keymap.set("i", "<C-BS>", "<C-W>", {})
+vim.keymap.set("i", "jk", "<Esc>l", {})
+vim.keymap.set("n", "<CR>", "o<Esc>k",{})
 
 -- LSP CONFIGS 
 local lspconfig = require('lspconfig')
