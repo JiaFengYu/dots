@@ -53,6 +53,10 @@ vim.opt.sidescrolloff = 10
 --vim.keymap.set("i", "<C-BS>", "<C-W>", {})
 vim.keymap.set("i", "jk", "<Esc>l", {})
 vim.keymap.set("n", "<CR>", "o<Esc>k",{})
+vim.keymap.set("v", "y", "ygv<Esc>", {})
+vim.keymap.set("n", ";", ":", {})
+vim.keymap.set("n", "<C-d>", "<C-d>zz", {})
+vim.keymap.set("n", "<C-f>", "<C-u>zz", {})
 
 -- LSP CONFIGS 
 local lspconfig = require('lspconfig')
