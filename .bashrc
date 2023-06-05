@@ -29,15 +29,17 @@ alias vi=nvim
 alias vim=nvim
 alias cd=z
 alias cat=bat
-alias top="btm --color gruvbox-light" # this acronym...
+alias top="btm --color gruvbox" # this acronym...
 alias charge="upower -i /org/freedesktop/UPower/devices/battery_BAT1"
 alias grep=rg
 alias find=fd
 alias diff=delta
+alias yay=paru
+alias yeet="paru -Rcs"
 #alias getpid="xprop _NET_WM_PID | sed 's/_NET_WM_PID(CARDINAL) = //' | ps `cat`"
 
 export PATH="~/.local/bin:$PATH"
-export PATH=$HOME/sys161/bin:$HOME/sys161/tools/bin:$PATH
+#export PATH=$HOME/sys161/bin:$HOME/sys161/tools/bin:$PATH
 export PATH=$PATH:/usr/local/go/bin
 export GTK_IM_MODULE=ibus
 export XMODIFIERS=@im=ibus
