@@ -52,6 +52,10 @@ vim.opt.sidescrolloff = 10
 -- KEYMAPS 
 --vim.keymap.set("i", "<C-BS>", "<C-W>", {})
 vim.keymap.set("i", "jk", "<Esc>l", {})
+vim.keymap.set("i", "<C-p>", "<C-o>p", {})
+vim.keymap.set("n", "<C-j>", "i<CR><Esc>k$", {})
+vim.keymap.set("n", "{", "{zz", {})
+vim.keymap.set("n", "}", "}zz", {})
 vim.keymap.set("n", "<CR>", "o<Esc>k",{})
 vim.keymap.set("v", "y", "ygv<Esc>", {})
 vim.keymap.set("n", ";", ":", {})
