@@ -61,6 +61,8 @@ vim.keymap.set("v", "y", "ygv<Esc>", {})
 vim.keymap.set("n", ";", ":", {})
 vim.keymap.set("n", "<C-d>", "<C-d>zz", {})
 vim.keymap.set("n", "<C-f>", "<C-u>zz", {})
+vim.keymap.set("n", "H", "0w", {})
+vim.keymap.set("n", "L", "$", {})
 
 -- LSP CONFIGS 
 local lspconfig = require('lspconfig')
