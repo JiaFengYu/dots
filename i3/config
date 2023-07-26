@@ -48,7 +48,8 @@ floating_modifier $mod
 bindsym $mod+Return exec alacritty
 
 # kill focused window
-bindsym $mod+Shift+q kill
+# kill
+bindsym Ctrl+d kill
 
 set $bg-color 	         #e3e3e3
 set $inactive-bg-color   #565656
@@ -237,6 +238,7 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 20
 
 bindsym $mod+Shift+m exec --no-startup-id /home/jiafengyu/external_monitor.sh
 bindsym $mod+Shift+x exec betterlockscreen -l dim
+bindsym $mod+Shift+t exec alacritty; exec /home/jiafengyu/top_script.sh
 
 # Media player controls
 bindsym XF86AudioPlay exec playerctl play
