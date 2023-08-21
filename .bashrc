@@ -36,6 +36,7 @@ alias find=fd
 alias diff=delta
 alias yay=paru
 alias yeet="paru -Rcs"
+alias count="ls -1 | wc -l"
 #alias getpid="xprop _NET_WM_PID | sed 's/_NET_WM_PID(CARDINAL) = //' | ps `cat`"
 
 export PATH="~/.local/bin:$PATH"
