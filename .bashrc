@@ -37,6 +37,8 @@ alias diff=delta
 alias yay=paru
 alias yeet="paru -Rcs"
 alias count="ls -1 | wc -l"
+alias shutdown="shutdown now"
+alias fn="echo 'you a fk nibba' && cvlc fn.mp3"
 #alias getpid="xprop _NET_WM_PID | sed 's/_NET_WM_PID(CARDINAL) = //' | ps `cat`"
 
 export PATH="~/.local/bin:$PATH"
