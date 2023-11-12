@@ -26,9 +26,10 @@ font pango:Source Code Pro 12
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 # output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
 #output * bg /home/jiafengyu/Wallpapers/real_moon.jpg fill
+exec_always waybar
 exec --no-startup-id gammastep
-exec --no-startup-id alacritty
 exec_always swaybg -i /home/jiafengyu/Wallpapers/real_moon.jpg -m fill
+exec --no-startup-id alacritty
 output eDP-1 scale 1.55
 
 
@@ -38,6 +39,7 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ to
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 bindsym $mod+Shift+S exec spectacle -rc
 bindsym Ctrl+Print exec spectacle -c
+bindsym $mod+Shift+m exec /home/jiafengyu/external_monitor_wayland.sh
 
 #
 # Example configuration:
@@ -93,9 +95,10 @@ bindsym Ctrl+Print exec spectacle -c
     # mouse button for dragging.
     floating_modifier $mod normal
 
-    # Reload the configuration file
-    bindsym $mod+Shift_r restart
+    # reload the configuration file
     bindsym $mod+Shift+c reload
+    # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+    bindsym $mod+Shift+r restart
 
     # Exit sway (logs you out of your Wayland session)
     bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
@@ -213,18 +216,27 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 
-for_window [class=".*"] border pixel 1 
-gaps inner 15 
+hide_edge_borders smart
+for_window [class=".*"] border pixel 1.5
+gaps inner 15
 gaps outer -5
 smart_gaps on
+
+set $opacity 0.85
+# for_window [class=".*"] opacity $opacity
+for_window [app_id="google-chrome"] opacity 1
+for_window [app_id=".*"] opacity $opacity
+
 #
 # Status Bar:
 #
 
-bar {
-    position top
-	status_command /usr/bin/i3status-rs /home/jiafengyu/.config/i3status-rust/config.toml
-}
+
+# bar {
+#     position top
+#     # status_command /usr/bin/i3status-rs /home/jiafengyu/.config/i3status-rust/config.toml
+#     bar swaybar_command waybar
+# }
 
 # Read `man 5 sway-bar` for more information about this section.
 # bar {
@@ -244,6 +256,5 @@ input "type:touchpad" {
     tap enabled 
     accel_profile "adaptive"
     pointer_accel 0.50
-
 }
 include /etc/sway/config.d/*
