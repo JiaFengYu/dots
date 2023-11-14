@@ -15,6 +15,7 @@ PS1='[\u@\h \W]\$ '
 source "$HOME/.cargo/env"
 source /usr/share/fzf/completion.bash
 source /usr/share/fzf/key-bindings.bash
+# source /etc/profile.d/vte.sh
 eval "$(starship init bash)"
 eval "$(zoxide init bash)"
 
@@ -32,13 +33,15 @@ alias cat=bat
 alias top="btm --color gruvbox" # this acronym...
 alias charge="upower -i /org/freedesktop/UPower/devices/battery_BAT1"
 alias grep=rg
-alias find=fd
+alias find="fd -d 1"
 alias diff=delta
 alias yay=paru
 alias yeet="paru -Rcs"
 alias count="ls -1 | wc -l"
 alias shutdown="shutdown now"
-alias fn="echo 'you a fk nibba' && cvlc fn.mp3"
+alias copy="wl-copy"
+alias paste="wl-paste"
+alias fn="echo 'the fn sing a song like its the leader of a soul crew' && cvlc fn.mp3"
 #alias getpid="xprop _NET_WM_PID | sed 's/_NET_WM_PID(CARDINAL) = //' | ps `cat`"
 
 export PATH="~/.local/bin:$PATH"
