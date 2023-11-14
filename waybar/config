@@ -10,7 +10,19 @@
         "format": " {}"
     },
     "sway/workspaces": {
-        "format": "{name}",
+        "format": "{icon}",
+        "format-icons": {
+         		"1": "  ",
+         		"2": "  ",
+         		"3": "  ",
+         		"4": "  ",
+         		"5": "  ",
+                "6": "六",
+                "7": "七",
+                "8": "八",
+                "9": "九",
+         		"10": "  ",
+         	},       
         "disable-scroll": true
     },
     "sway/window": {
@@ -18,7 +30,7 @@
         "tooltip": false
     },
     "clock": {
-        "format": "{:%F %H:%M:%S}",
+        "format": "{:%H:%M:%S %F}",
         "interval": 1,
         "tooltip": false
     },
@@ -27,15 +39,16 @@
         "format-alt": "{time} {icon}",
         "format-icons": ["", "", "", "", ""],
         "format-charging": " {capacity}%",
+        "interval":3,
         "states": {
-            "warning": 15,
-            "critical": 8
+            "warning": 10,
+            "critical": 5
         },
         "tooltip": false
     },
     "network": {
         "interval": 5,
-        "format": "{icon} {essid} ",
+        "format": "{icon} {essid}",
         "format-alt": "{ipaddr}/{cidr} {icon}",
         "format-alt-click": "click-right",
         "format-icons": {
