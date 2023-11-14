@@ -4,6 +4,8 @@ NEW DOTS ON WAYLAND - SWAY (Nov 2023):
 ![2023-11-13_19-30-38](https://github.com/JiaFengYu/dots/assets/48167665/66f7c130-2d3c-4751-9548-6fd4156037ee)
 ![2023-11-13_19-31-14](https://github.com/JiaFengYu/dots/assets/48167665/a8b58eeb-ae01-4c1b-9d45-e12e66f0134a)
 ![2023-11-13_19-30-24](https://github.com/JiaFengYu/dots/assets/48167665/84199d6a-0ffa-4924-908f-f451f7815543)
+![2023-11-12_02-51-56](https://github.com/JiaFengYu/dots/assets/48167665/714eb4ee-4f2f-4e2c-9765-86e90fbbe3ca)
+
 
 
 
