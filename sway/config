@@ -28,7 +28,7 @@ font pango:Source Code Pro 12
 #output * bg /home/jiafengyu/Wallpapers/real_moon.jpg fill
 exec waybar
 exec --no-startup-id gammastep
-exec_always swaybg -i /home/jiafengyu/Wallpapers/real_moon.jpg -m fill
+exec swaybg -i /home/jiafengyu/Wallpapers/real_moon.jpg -m fill
 exec --no-startup-id alacritty
 output eDP-1 scale 1.55
 
@@ -40,6 +40,8 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 bindsym $mod+Shift+S exec grimshot copy window 
 bindsym Ctrl+Print exec grimshot save screen ~/Pictures/$(date +'%Y-%m-%d_%H-%M-%S').png
 bindsym $mod+Shift+m exec /home/jiafengyu/external_monitor_wayland.sh
+bindsym XF86MonBrightnessUp exec brightnessctl set 5%+
+bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
 
 #
 # Example configuration:
