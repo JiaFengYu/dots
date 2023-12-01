@@ -1,0 +1,99 @@
+MenuBar=Disabled
+
+[$Version]
+update_info=dolphin_detailsmodesettings.upd:rename-leading-padding,dolphin_detailsmodesettings.upd:move-content-display
+
+[ContentDisplay]
+UseShortRelativeDates=false
+
+[General]
+EditableUrl=true
+RememberOpenedTabs=false
+ShowFullPath=true
+ShowFullPathInTitlebar=true
+ShowSpaceInfo=false
+ShowZoomSlider=false
+Version=202
+ViewPropsTimestamp=2021,9,20,12,25,17.165
+
+[IconsMode]
+IconSize=80
+PreviewSize=96
+UseSystemFont=false
+ViewFont=Source Code Pro,11,-1,5,50,0,0,0,0,0
+
+[KFileDialog Settings]
+Places Icons Auto-resize=false
+Places Icons Static Size=22
+
+[KPropertiesDialog]
+1368x912 screen: Height=434
+1368x912 screen: Width=466
+1680x945 screen: Height=434
+1680x945 screen: Width=480
+1920x1080 screen: Height=434
+1920x1080 screen: Width=488
+DP-1 Height 1680x945=594
+DP-1 Height 1680x945 DP-1=434
+DP-1 Height 1920x1080=475
+DP-1 Width 1680x945=508
+DP-1 Width 1680x945 DP-1=466
+DP-1 Width 1920x1080=530
+eDP-1 DP-1 Height 1563x1042=475
+eDP-1 DP-1 Width 1563x1042=501
+eDP-1 Height 1368x912=434
+eDP-1 Height 1368x912 eDP-1=434
+eDP-1 Width 1368x912=488
+eDP-1 Width 1368x912 eDP-1=466
+
+[MainWindow]
+DP-1 Height 1097x617=457
+DP-1 Height 1680x945=901
+DP-1 Height 1920x1080=690
+DP-1 Width 1097x617=686
+DP-1 Width 1680x945=1680
+DP-1 Width 1920x1080=1280
+DP-1 XPosition 1097x617=0
+DP-1 XPosition 1680x945=0
+DP-1 XPosition 1920x1080=340
+DP-1 YPosition 1097x617=28
+DP-1 YPosition 1680x945=44
+DP-1 YPosition 1920x1080=99
+MenuBar=Disabled
+RestorePositionForNextInstance=false
+ToolBarsMovable=Disabled
+eDP-1 DP-1 Height 1097x617=589
+eDP-1 DP-1 Height 1563x1042=457
+eDP-1 DP-1 Height 1680x945=868
+eDP-1 DP-1 Width 1097x617=760
+eDP-1 DP-1 Width 1563x1042=686
+eDP-1 DP-1 Width 1680x945=682
+eDP-1 DP-1 XPosition 1097x617=2930
+eDP-1 DP-1 XPosition 1563x1042=681
+eDP-1 DP-1 YPosition 1097x617=67
+eDP-1 DP-1 YPosition 1563x1042=177
+eDP-1 Height 1368x912=868
+eDP-1 Height 1563x1042=457
+eDP-1 Width 1368x912=682
+eDP-1 Width 1563x1042=686
+eDP-1 Window-Maximized 1563x1042=true
+eDP-1 XPosition 1029x686=0
+eDP-1 XPosition 1368x912=686
+eDP-1 XPosition 1563x1042=593
+eDP-1 XPosition 1800x1200=0
+eDP-1 XPosition 2048x1536=1020
+eDP-1 YPosition 1029x686=0
+eDP-1 YPosition 1368x912=44
+eDP-1 YPosition 1563x1042=378
+eDP-1 YPosition 1800x1200=29
+eDP-1 YPosition 2048x1536=29
+
+[Open-with settings]
+CompletionMode=1
+History=mira,drr
+
+[PreviewSettings]
+Plugins=appimagethumbnail,audiothumbnail,comicbookthumbnail,cursorthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,directorythumbnail,imagethumbnail,jpegthumbnail,windowsexethumbnail,windowsimagethumbnail,opendocumentthumbnail,svgthumbnail
+
+[Search]
+Location=Everywhere
