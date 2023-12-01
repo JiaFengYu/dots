@@ -1,0 +1,28 @@
+[Added Associations]
+application/pdf=org.pwmt.zathura-pdf-mupdf.desktop;google-chrome.desktop;
+image/jpeg=mirage.desktop;google-chrome.desktop;feh.desktop;
+image/png=mirage.desktop;
+inode/directory=org.kde.dolphin.desktop;
+text/plain=nvim.desktop;code.desktop;
+text/x-c++src=nvim.desktop;code.desktop;
+text/x-matlab=nvim.desktop;code.desktop;
+text/x-tex=texstudio.desktop;vim.desktop;visual-studio-code.desktop;libreoffice-writer.desktop;notepadqq.desktop;
+x-scheme-handler/http=firefox.desktop;
+x-scheme-handler/https=firefox.desktop;
+x-scheme-handler/tg=userapp-Telegram Desktop-46QAZ1.desktop;org.telegram.desktop.desktop;
+
+[Default Applications]
+application/pdf=org.pwmt.zathura-pdf-mupdf.desktop;
+image/jpeg=mirage.desktop;
+image/png=mirage.desktop;
+inode/directory=org.kde.dolphin.desktop;
+text/html=google-chrome.desktop
+text/plain=nvim.desktop;
+text/x-c++src=nvim.desktop;
+text/x-matlab=nvim.desktop;
+text/x-tex=nvim.desktop;
+x-scheme-handler/http=google-chrome.desktop
+x-scheme-handler/https=google-chrome.desktop
+x-scheme-handler/tg=org.telegram.desktop.desktop
+x-scheme-handler/about=google-chrome.desktop
+x-scheme-handler/unknown=google-chrome.desktop
