@@ -37,7 +37,7 @@ bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
-bindsym $mod+Shift+S exec grimshot copy window 
+bindsym $mod+Shift+S exec grimshot copy area
 bindsym Ctrl+Print exec grimshot save screen ~/Pictures/$(date +'%Y-%m-%d_%H-%M-%S').png
 bindsym $mod+Shift+m exec /home/jiafengyu/external_monitor_wayland.sh
 bindsym XF86MonBrightnessUp exec brightnessctl set 5%+
@@ -88,7 +88,7 @@ bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
     bindsym Ctrl+d kill
 
     # Start your launcher
-    bindsym $mod+d exec wofi --show run
+    bindsym $mod+d exec --no-startup-id rofi -show run
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
