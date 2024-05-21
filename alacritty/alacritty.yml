@@ -1,231 +1,231 @@
-# Configuration for Alacritty, the GPU enhanced terminal emulator.
+# configuration for alacritty, the gpu enhanced terminal emulator.
 
-# Any items in the `env` entry below will be added as
-# environment variables. Some entries may override variables
+# any items in the `env` entry below will be added as
+# environment variables. some entries may override variables
 # set by alacritty itself.
 env:
-  # TERM variable
+  # term variable
   #
-  # This value is used to set the `$TERM` environment variable for
-  # each instance of Alacritty. If it is not present, alacritty will
+  # this value is used to set the `$term` environment variable for
+  # each instance of alacritty. if it is not present, alacritty will
   # check the local terminfo database and use `alacritty` if it is
   # available, otherwise `xterm-256color` is used.
-  TERM: xterm-256color
+  term: xterm-256color
 
 window:
-  # Window dimensions (changes require restart)
+  # window dimensions (changes require restart)
   #
-  # Specified in number of columns/lines, not pixels.
-  # If both are `0`, this setting is ignored.
+  # specified in number of columns/lines, not pixels.
+  # if both are `0`, this setting is ignored.
   dimensions:
     columns: 90
     lines: 28
 
-  # Window position (changes require restart)
+  # window position (changes require restart)
   #
-  # Specified in number of pixels.
-  # If the position is not set, the window manager will handle the placement.
+  # specified in number of pixels.
+  # if the position is not set, the window manager will handle the placement.
   position:
     x: 0
     y: 0
 
-  # Window padding (changes require restart)
+  # window padding (changes require restart)
   #
-  # Blank space added around the window in pixels. This padding is scaled
-  # by DPI and the specified value is always added at both opposing sides.
+  # blank space added around the window in pixels. this padding is scaled
+  # by dpi and the specified value is always added at both opposing sides.
   # padding:
   # x: 6
   # y: 6
 
-  # Spread additional padding evenly around the terminal content.
+  # spread additional padding evenly around the terminal content.
   # dynamic_padding: false
 
-  # Window decorations
+  # window decorations
   #
-  # Values for `decorations`:
-  #     - full: Borders and title bar
-  #     - none: Neither borders nor title bar
+  # values for `decorations`:
+  #     - full: borders and title bar
+  #     - none: neither borders nor title bar
   #
-  # Values for `decorations` (macOS only):
-  #     - transparent: Title bar, transparent background and title bar buttons
-  #     - buttonless: Title bar, transparent background, but no title bar buttons
+  # values for `decorations` (macos only):
+  #     - transparent: title bar, transparent background and title bar buttons
+  #     - buttonless: title bar, transparent background, but no title bar buttons
   #decorations: full
 
-  # Startup Mode (changes require restart)
+  # startup mode (changes require restart)
   #
-  # Values for `startup_mode`:
-  #   - Windowed
-  #   - Maximized
-  #   - Fullscreen
+  # values for `startup_mode`:
+  #   - windowed
+  #   - maximized
+  #   - fullscreen
   #
-  # Values for `startup_mode` (macOS only):
-  #   - SimpleFullscreen
-  #startup_mode: Windowed
+  # values for `startup_mode` (macos only):
+  #   - simplefullscreen
+  #startup_mode: windowed
 
-  # Window title
-  # title: Alacritty
+  # window title
+  # title: alacritty
 
-  # Window class (Linux/BSD only):
+  # window class (linux/bsd only):
   # class:
-    # Application instance name
-    instance: Alacritty
-    # General application class
-    general: Terminal
+    # application instance name
+    instance: alacritty
+    # general application class
+    general: terminal
 
-  # GTK theme variant (Linux/BSD only)
+  # gtk theme variant (linux/bsd only)
   #
-  # Override the variant of the GTK theme. Commonly supported values are `dark` and `light`.
-  # Set this to `None` to use the default theme variant.
-  #gtk_theme_variant: None
+  # override the variant of the gtk theme. commonly supported values are `dark` and `light`.
+  # set this to `none` to use the default theme variant.
+  #gtk_theme_variant: none
 
 scrolling:
-  # Maximum number of lines in the scrollback buffer.
-  # Specifying '0' will disable scrolling.
+  # maximum number of lines in the scrollback buffer.
+  # specifying '0' will disable scrolling.
   history: 5000
 
-  # Number of lines the viewport will move for every line scrolled when
+  # number of lines the viewport will move for every line scrolled when
   # scrollback is enabled (history > 0).
   #multiplier: 3
 
-  # Scroll to the bottom when new text is written to the terminal.
+  # scroll to the bottom when new text is written to the terminal.
   #auto_scroll: false
 
-# Spaces per Tab (changes require restart)
+# spaces per tab (changes require restart)
 #
-# This setting defines the width of a tab in cells.
+# this setting defines the width of a tab in cells.
 #
-# Some applications, like Emacs, rely on knowing about the width of a tab.
-# To prevent unexpected behavior in these applications, it's also required to
+# some applications, like emacs, rely on knowing about the width of a tab.
+# to prevent unexpected behavior in these applications, it's also required to
 # change the `it` value in terminfo when altering this setting.
 #tabspaces: 8
 
-# Font configuration
+# font configuration
 font:
-  # Normal (roman) font face
+  # normal (roman) font face
   normal:
-    # Font family
+    # font family
     #
-    # Default:
-    #   - (macOS) Menlo
-    #   - (Linux/BSD) monospace
-    #   - (Windows) Consolas
-    family: Source Code Pro
-    # family: CodeNewRoman Nerd Font
-    # family: RobotoMono Nerd Font
-    # family: Hack
-    # family: JetBrains Mono
-    # family: UbuntuMono Nerd Font
-    # family: Monofur Nerd Font
-    # family: TerminessTTF Nerd Font
-    # family: Mononoki Nerd Font
+    # default:
+    #   - (macos) menlo
+    #   - (linux/bsd) monospace
+    #   - (windows) consolas
+    family: source code pro
+    # family: codenewroman nerd font
+    # family: robotomono nerd font
+    # family: hack
+    # family: jetbrains mono
+    # family: ubuntumono nerd font
+    # family: monofur nerd font
+    # family: terminessttf nerd font
+    # family: mononoki nerd font
 
-    # The `style` can be specified to pick a specific face.
-    style: SemiBold
+    # the `style` can be specified to pick a specific face.
+    style: semibold
 
-  # Bold font face
+  # bold font face
   bold:
-    # Font family
+    # font family
     #
-    # If the bold family is not specified, it will fall back to the
+    # if the bold family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: Source Code Pro
-    # family: CodeNewRoman Nerd Font
-    # family: RobotoMono Nerd Font
-    # family: Hack
-    # family: JetBrains Mono
-    # family: UbuntuMono Nerd Font
-    # family: Monofur Nerd Font
-    # family: TerminessTTF Nerd Font
-    # family: Mononoki Nerd Font
+    family: source code pro
+    # family: codenewroman nerd font
+    # family: robotomono nerd font
+    # family: hack
+    # family: jetbrains mono
+    # family: ubuntumono nerd font
+    # family: monofur nerd font
+    # family: terminessttf nerd font
+    # family: mononoki nerd font
 
-    # The `style` can be specified to pick a specific face.
-    style: Bold
+    # the `style` can be specified to pick a specific face.
+    style: bold
 
-  # Italic font face
+  # italic font face
   italic:
-    # Font family
+    # font family
     #
-    # If the italic family is not specified, it will fall back to the
+    # if the italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: Source Code Pro
-    # family: CodeNewRoman Nerd Font
-    # family: RobotoMono Nerd Font
-    # family: Hack
-    # family: JetBrains Mono
-    # family: UbuntuMono Nerd Font
-    # family: Monofuritalic Nerd Font Mono
-    # family: TerminessTTF Nerd Font
-    # family: Mononoki Nerd Font
+    family: source code pro
+    # family: codenewroman nerd font
+    # family: robotomono nerd font
+    # family: hack
+    # family: jetbrains mono
+    # family: ubuntumono nerd font
+    # family: monofuritalic nerd font mono
+    # family: terminessttf nerd font
+    # family: mononoki nerd font
 
-    # The `style` can be specified to pick a specific face.
-    style: Italic
+    # the `style` can be specified to pick a specific face.
+    style: italic
 
-  # Bold italic font face
+  # bold italic font face
   bold_italic:
-    # Font family
+    # font family
     #
-    # If the bold italic family is not specified, it will fall back to the
+    # if the bold italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: Source Code Pro
-    # family: CodeNewRoman Nerd Font
-    # family: RobotoMono Nerd Font
-    # family: Hack
-    # family: JetBrains Mono
-    # family: UbuntuMono Nerd Font
-    # family: Monofuritalic Nerd Font Mono
-    # family: TerminessTTF Nerd Font
-    # family: Mononoki Nerd Font
+    family: source code pro
+    # family: codenewroman nerd font
+    # family: robotomono nerd font
+    # family: hack
+    # family: jetbrains mono
+    # family: ubuntumono nerd font
+    # family: monofuritalic nerd font mono
+    # family: terminessttf nerd font
+    # family: mononoki nerd font
 
-    # The `style` can be specified to pick a specific face.
-    style: Bold Italic
+    # the `style` can be specified to pick a specific face.
+    style: bold italic
 
-  # Point size
+  # point size
   size: 13.0
 
-  # Offset is the extra space around each character. `offset.y` can be thought of
+  # offset is the extra space around each character. `offset.y` can be thought of
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
   offset:
     x: 0
     y: 1
 
-  # Glyph offset determines the locations of the glyphs within their cells with
-  # the default being at the bottom. Increasing `x` moves the glyph to the right,
+  # glyph offset determines the locations of the glyphs within their cells with
+  # the default being at the bottom. increasing `x` moves the glyph to the right,
   # increasing `y` moves the glyph upwards.
   #glyph_offset:
   #  x: 0
   #  y: 0
 
-  # Thin stroke font rendering (macOS only)
+  # thin stroke font rendering (macos only)
   #
-  # Thin strokes are suitable for retina displays, but for non-retina screens
+  # thin strokes are suitable for retina displays, but for non-retina screens
   # it is recommended to set `use_thin_strokes` to `false`
   #
-  # macOS >= 10.14.x:
+  # macos >= 10.14.x:
   #
-  # If the font quality on non-retina display looks bad then set
+  # if the font quality on non-retina display looks bad then set
   # `use_thin_strokes` to `true` and enable font smoothing by running the
   # following command:
-  #   `defaults write -g CGFontRenderingFontSmoothingDisabled -bool NO`
+  #   `defaults write -g cgfontrenderingfontsmoothingdisabled -bool no`
   #
-  # This is a global setting and will require a log out or restart to take
+  # this is a global setting and will require a log out or restart to take
   # effect.
   #use_thin_strokes: true
 
-# If `true`, bold text is drawn using the bright color variants.
+# if `true`, bold text is drawn using the bright color variants.
 draw_bold_text_with_bright_colors: true
 
-# COLOR SCHEMES
+# color schemes
 schemes:
-  # Doom One
+  # doom one
   doom-one: &doom-one
     primary:
       background: '#282c34'
       foreground: '#bbc2cf'
     cursor:
-      text: CellBackground
+      text: cellbackground
       cursor: '#528bff'
     selection:
-      text: CellForeground
+      text: cellforeground
       background: '#3e4451'
     normal:
       black:   '#1c1f24'
@@ -241,22 +241,22 @@ schemes:
       red:     '#da8548'
       green:   '#4db5bd'
       yellow:  '#ecbe7b'
-      blue:    '#3071db'   # This is 2257a0 in Doom Emacs but I lightened it.
+      blue:    '#3071db'   # this is 2257a0 in doom emacs but i lightened it.
       magenta: '#a9a1e1'
       cyan:    '#46d9ff'
       white:   '#dfdfdf'
 
-  # Dracula
+  # dracula
   dracula: &dracula
     primary:
       background: '#282a36'
       foreground: '#f8f8f2'
     cursor:
-      text: CellBackground
-      cursor: CellForeground
+      text: cellbackground
+      cursor: cellforeground
     vi_mode_cursor:
-      text: CellBackground
-      cursor: CellForeground
+      text: cellbackground
+      cursor: cellforeground
     search:
       matches:
         foreground: '#44475a'
@@ -268,10 +268,10 @@ schemes:
         background: '#282a36'
         foreground: '#f8f8f2'
     line_indicator:
-      foreground: None
-      background: None
+      foreground: none
+      background: none
     selection:
-      text: CellForeground
+      text: cellforeground
       background: '#44475a'
     normal:
       black:   '#000000'
@@ -301,19 +301,19 @@ schemes:
       cyan:    '#59dffc'
       white:   '#e6e6d1'
 
-  # Colors (Solarized Light)
+  # colors (solarized light)
   solarized-light: &solarized-light
-    # Default colors
+    # default colors
     primary:
       background: '#fdf6e3' # base3
       foreground: '#657b83' # base00
 
-    # Cursor colors
+    # cursor colors
     cursor:
       text:   '#fdf6e3' # base3
       cursor: '#657b83' # base00
 
-    # Normal colors
+    # normal colors
     normal:
       black:   '#073642' # base02
       red:     '#dc322f' # red
@@ -324,7 +324,7 @@ schemes:
       cyan:    '#2aa198' # cyan
       white:   '#eee8d5' # base2
 
-    # Bright colors
+    # bright colors
     bright:
       black:   '#002b36' # base03
       red:     '#cb4b16' # orange
@@ -335,19 +335,19 @@ schemes:
       cyan:    '#93a1a1' # base1
       white:   '#fdf6e3' # base3
 
-  # Colors (Solarized Dark)
+  # colors (solarized dark)
   solarized-dark: &solarized-dark
-    # Default colors
+    # default colors
     primary:
       background: '#19181d' # base03
       foreground: '#bcbcbc' # base0
 
-    # Cursor colors
+    # cursor colors
     cursor:
       text:   '#002b36' # base03
       cursor: '#839496' # base0
 
-    # Normal colors
+    # normal colors
     normal:
       black:   '#073642' # base02
       red:     '#dc322f' # red
@@ -358,7 +358,7 @@ schemes:
       cyan:    '#2aa198' # cyan
       white:   '#eee8d5' # base2
 
-    # Bright colors
+    # bright colors
     bright:
       black:   '#002b36' # base03
       red:     '#cb4b16' # orange
@@ -369,13 +369,13 @@ schemes:
       cyan:    '#93a1a1' # base1
       white:   '#fdf6e3' # base3
 
-# Space Duck colors:
-  # Default colors
+# space duck colors:
+  # default colors
   space-duck: &space-duck
   primary:
     background: '#0f111b'
     foreground: '#ecf0c1'
-  # Normal colors
+  # normal colors
   normal:
     black:   '#000000'
     red:     '#e33400'
@@ -386,7 +386,7 @@ schemes:
     cyan:    '#7a5ccc'
     white:   '#686f9a'
 
-  # Bright colors
+  # bright colors
   bright:
     black:   '#686f9a'
     red:     '#e33400'
@@ -397,13 +397,13 @@ schemes:
     cyan:    '#7a5ccc'
     white:   '#f0f1ce'
 #colors: 
-# Space Duck
+# space duck
 colors:
-  # Default colors
+  # default colors
   primary:
     background: '#0f111b'
     foreground: '#ecf0c1'
-  #Normal colors
+  #normal colors
   normal:
     black:   '#000000'
     red:     '#e33400'
@@ -414,7 +414,7 @@ colors:
     cyan:    '#7a5ccc'
     white:   '#686f9a'
 
-   # Bright colors
+   # bright colors
   bright:
     black:   '#686f9a'
     red:     '#e33400'
@@ -426,8 +426,8 @@ colors:
     white:   '#f0f1ce'
 
 
-# Choose ONE color scheme from those available in the above list.
-# Colors (Gruvbox dark)
+# choose one color scheme from those available in the above list.
+# colors (gruvbox dark)
 #colors:
 #  primary:
 #    # hard contrast background - '#1d2021'
@@ -437,27 +437,27 @@ colors:
 #    bright_foreground: '#fbf1c7'
 #    dim_foreground:    '#a89984'
 #  cursor:
-#    text:   CellBackground
-#    cursor: CellForeground
+#    text:   cellbackground
+#    cursor: cellforeground
 #  vi_mode_cursor:
-#    text:   CellBackground
-#    cursor: CellForeground
+#    text:   cellbackground
+#    cursor: cellforeground
 #  # search:
 #  #   matches:
 #  #     foreground: '#000000'
 #  #     background: '#ffffff'
 #  #   focused_match:
-#  #    foreground: CellBackground
-#  #    background: CellForeground
+#  #    foreground: cellbackground
+#  #    background: cellforeground
 #  #   bar:
 #  #     background: ''
 #  #     foreground: ''
 #  # line_indicator:
-#  #   foreground: None
-#  #   background: None
+#  #   foreground: none
+#  #   background: none
 #  selection:
-#    text:       CellBackground
-#    background: CellForeground
+#    text:       cellbackground
+#    background: cellforeground
 #  bright:
 #    black:   '#928374'
 #    red:     '#fb4934'
@@ -487,293 +487,290 @@ colors:
 #    white:   '#928374'
 #  # indexed_colors: []
 
-# Visual Bell
+# visual bell
 #
-# Any time the BEL code is received, Alacritty "rings" the visual bell. Once
+# any time the bel code is received, alacritty "rings" the visual bell. once
 # rung, the terminal background will be set to white and transition back to the
-# default background color. You can control the rate of this transition by
-# setting the `duration` property (represented in milliseconds). You can also
+# default background color. you can control the rate of this transition by
+# setting the `duration` property (represented in milliseconds). you can also
 # configure the transition function by setting the `animation` property.
 #
-# Values for `animation`:
-#   - Ease
-#   - EaseOut
-#   - EaseOutSine
-#   - EaseOutQuad
-#   - EaseOutCubic
-#   - EaseOutQuart
-#   - EaseOutQuint
-#   - EaseOutExpo
-#   - EaseOutCirc
-#   - Linear
+# values for `animation`:
+#   - ease
+#   - easeout
+#   - easeoutsine
+#   - easeoutquad
+#   - easeoutcubic
+#   - easeoutquart
+#   - easeoutquint
+#   - easeoutexpo
+#   - easeoutcirc
+#   - linear
 #
-# Specifying a `duration` of `0` will disable the visual bell.
+# specifying a `duration` of `0` will disable the visual bell.
 #visual_bell:
-#  animation: EaseOutExpo
+#  animation: easeoutexpo
 #  duration: 0
 #  color: '#ffffff'
 
-# Background opacity
+# background opacity
 #
-# Window opacity as a floating point number from `0.0` to `1.0`.
-# The value `0.0` is completely transparent and `1.0` is opaque.
+# window opacity as a floating point number from `0.0` to `1.0`.
+# the value `0.0` is completely transparent and `1.0` is opaque.
 window.opacity: 0.10
   #background_opacity: 0.20
 
 #selection:
   #semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
 
-  # When set to `true`, selected text will be copied to the primary clipboard.
+  # when set to `true`, selected text will be copied to the primary clipboard.
   #save_to_clipboard: false
 
-# Allow terminal applications to change Alacritty's window title.
+# allow terminal applications to change alacritty's window title.
 #dynamic_title: true
 
 cursor:
-  # Cursor style
+  # cursor style
   #
-  # Values for `style`:
-  #   - ▇ Block
-  #   - _ Underline
-  #   - | Beam
-  style: Block
+  # values for `style`:
+  #   - ▇ block
+  #   - _ underline
+  #   - | beam
+  style: block
 
-  # If this is `true`, the cursor will be rendered as a hollow box when the
+  # if this is `true`, the cursor will be rendered as a hollow box when the
   # window is not focused.
   #unfocused_hollow: true
 
-# Live config reload (changes require restart)
+# live config reload (changes require restart)
 #live_config_reload: true
 
-# Shell
+# shell
 #
-# You can set `shell.program` to the path of your favorite shell, e.g. `/bin/fish`.
-# Entries in `shell.args` are passed unmodified as arguments to the shell.
+# you can set `shell.program` to the path of your favorite shell, e.g. `/bin/fish`.
+# entries in `shell.args` are passed unmodified as arguments to the shell.
 #
-# Default:
-#   - (macOS) /bin/bash --login
-#   - (Linux/BSD) user login shell
-#   - (Windows) powershell
+# default:
+#   - (macos) /bin/bash --login
+#   - (linux/bsd) user login shell
+#   - (windows) powershell
 #shell:
 #  program: /bin/bash
 #  args:
 #    - --login
 
-# Startup directory
+# startup directory
 #
-# Directory the shell is started in. If this is unset, or `None`, the working
+# directory the shell is started in. if this is unset, or `none`, the working
 # directory of the parent process will be used.
-#working_directory: None
+#working_directory: none
 
-# WinPTY backend (Windows only)
+# winpty backend (windows only)
 #
-# Alacritty defaults to using the newer ConPTY backend if it is available,
-# since it resolves a lot of bugs and is quite a bit faster. If it is not
-# available, the the WinPTY backend will be used instead.
+# alacritty defaults to using the newer conpty backend if it is available,
+# since it resolves a lot of bugs and is quite a bit faster. if it is not
+# available, the the winpty backend will be used instead.
 #
-# Setting this option to `true` makes Alacritty use the legacy WinPTY backend,
-# even if the ConPTY backend is available.
+# setting this option to `true` makes alacritty use the legacy winpty backend,
+# even if the conpty backend is available.
 #winpty_backend: false
 
-# Send ESC (\x1b) before characters when alt is pressed.
 #alt_send_esc: true
 
 #debug:
-  # Display the time it takes to redraw each frame.
+  # display the time it takes to redraw each frame.
   #render_timer: false
 
-  # Keep the log file after quitting Alacritty.
+  # keep the log file after quitting alacritty.
   #persistent_logging: false
 
-  # Log level
+  # log level
   #
-  # Values for `log_level`:
-  #   - None
-  #   - Error
-  #   - Warn
-  #   - Info
-  #   - Debug
-  #   - Trace
-  #log_level: Warn
+  # values for `log_level`:
+  #   - none
+  #   - error
+  #   - warn
+  #   - info
+  #   - debug
+  #   - trace
+  #log_level: warn
 
-  # Print all received window events.
+  # print all received window events.
   #print_events: false
 
-  # Record all characters and escape sequences as test data.
+  # record all characters and escape sequences as test data.
   #ref_test: false
 
 #mouse:
-  # Click settings
+  # click settings
   #
-  # The `double_click` and `triple_click` settings control the time
+  # the `double_click` and `triple_click` settings control the time
   # alacritty should wait for accepting multiple clicks as one double
   # or triple click.
   #double_click: { threshold: 300 }
   #triple_click: { threshold: 300 }
 
-  # If this is `true`, the cursor is temporarily hidden when typing.
+  # if this is `true`, the cursor is temporarily hidden when typing.
   #hide_when_typing: false
 
   #url:
-    # URL launcher
+    # url launcher
     #
-    # This program is executed when clicking on a text which is recognized as a URL.
-    # The URL is always added to the command as the last parameter.
+    # this program is executed when clicking on a text which is recognized as a url.
+    # the url is always added to the command as the last parameter.
     #
-    # When set to `None`, URL launching will be disabled completely.
+    # when set to `none`, url launching will be disabled completely.
     #
-    # Default:
-    #   - (macOS) open
-    #   - (Linux/BSD) xdg-open
-    #   - (Windows) explorer
+    # default:
+    #   - (macos) open
+    #   - (linux/bsd) xdg-open
+    #   - (windows) explorer
     #launcher:
     #  program: xdg-open
     #  args: []
 
-    # URL modifiers
+    # url modifiers
     #
-    # These are the modifiers that need to be held down for opening URLs when clicking
-    # on them. The available modifiers are documented in the key binding section.
-    #modifiers: None
+    # these are the modifiers that need to be held down for opening urls when clicking
+    # on them. the available modifiers are documented in the key binding section.
+    #modifiers: none
 
-# Mouse bindings
+# mouse bindings
 #
-# Mouse bindings are specified as a list of objects, much like the key
+# mouse bindings are specified as a list of objects, much like the key
 # bindings further below.
 #
-# Each mouse binding will specify a:
+# each mouse binding will specify a:
 #
 # - `mouse`:
 #
-#   - Middle
-#   - Left
-#   - Right
-#   - Numeric identifier such as `5`
+#   - middle
+#   - left
+#   - right
+#   - numeric identifier such as `5`
 #
 # - `action` (see key bindings)
 #
-# And optionally:
+# and optionally:
 #
 # - `mods` (see key bindings)
 #mouse_bindings:
-#  - { mouse: Middle, action: PasteSelection }
+#  - { mouse: middle, action: pasteselection }
 
-# Key bindings
+# key bindings
 #
-# Key bindings are specified as a list of objects. For example, this is the
+# key bindings are specified as a list of objects. for example, this is the
 # default paste binding:
 #
-# `- { key: V, mods: Control|Shift, action: Paste }`
+# `- { key: v, mods: control|shift, action: paste }`
 #
-# Each key binding will specify a:
+# each key binding will specify a:
 #
-# - `key`: Identifier of the key pressed
+# - `key`: identifier of the key pressed
 #
-#    - A-Z
-#    - F1-F24
-#    - Key0-Key9
+#    - a-z
+#    - f1-f24
+#    - key0-key9
 #
-#    A full list with available key codes can be found here:
-#    https://docs.rs/glutin/*/glutin/event/enum.VirtualKeyCode.html#variants
+#    a full list with available key codes can be found here:
+#    https://docs.rs/glutin/*/glutin/event/enum.virtualkeycode.html#variants
 #
-#    Instead of using the name of the keys, the `key` field also supports using
-#    the scancode of the desired key. Scancodes have to be specified as a
-#    decimal number. This command will allow you to display the hex scancodes
+#    instead of using the name of the keys, the `key` field also supports using
+#    the scancode of the desired key. scancodes have to be specified as a
+#    decimal number. this command will allow you to display the hex scancodes
 #    for certain keys:
 #
 #       `showkey --scancodes`.
 #
-# Then exactly one of:
+# then exactly one of:
 #
-# - `chars`: Send a byte sequence to the running application
+# - `chars`: send a byte sequence to the running application
 #
-#    The `chars` field writes the specified string to the terminal. This makes
-#    it possible to pass escape sequences. To find escape codes for bindings
-#    like `PageUp` (`"\x1b[5~"`), you can run the command `showkey -a` outside
-#    of tmux. Note that applications use terminfo to map escape sequences back
-#    to keys. It is therefore required to update the terminfo when changing an
+#    the `chars` field writes the specified string to the terminal. this makes
+#    it possible to pass escape sequences. to find escape codes for bindings
+#    of tmux. note that applications use terminfo to map escape sequences back
+#    to keys. it is therefore required to update the terminfo when changing an
 #    escape sequence.
 #
-# - `action`: Execute a predefined action
+# - `action`: execute a predefined action
 #
-#   - Copy
-#   - Paste
-#   - PasteSelection
-#   - IncreaseFontSize
-#   - DecreaseFontSize
-#   - ResetFontSize
-#   - ScrollPageUp
-#   - ScrollPageDown
-#   - ScrollLineUp
-#   - ScrollLineDown
-#   - ScrollToTop
-#   - ScrollToBottom
-#   - ClearHistory
-#   - Hide
-#   - Minimize
-#   - Quit
-#   - ToggleFullscreen
-#   - SpawnNewInstance
-#   - ClearLogNotice
-#   - ReceiveChar
-#   - None
+#   - copy
+#   - paste
+#   - pasteselection
+#   - increasefontsize
+#   - decreasefontsize
+#   - resetfontsize
+#   - scrollpageup
+#   - scrollpagedown
+#   - scrolllineup
+#   - scrolllinedown
+#   - scrolltotop
+#   - scrolltobottom
+#   - clearhistory
+#   - hide
+#   - minimize
+#   - quit
+#   - togglefullscreen
+#   - spawnnewinstance
+#   - clearlognotice
+#   - receivechar
+#   - none
 #
-#   (macOS only):
-#   - ToggleSimpleFullscreen: Enters fullscreen without occupying another space
+#   (macos only):
+#   - togglesimplefullscreen: enters fullscreen without occupying another space
 #
-# - `command`: Fork and execute a specified command plus arguments
+# - `command`: fork and execute a specified command plus arguments
 #
-#    The `command` field must be a map containing a `program` string and an
-#    `args` array of command line parameter strings. For example:
+#    the `command` field must be a map containing a `program` string and an
+#    `args` array of command line parameter strings. for example:
 #       `{ program: "alacritty", args: ["-e", "vttest"] }`
 #
-# And optionally:
+# and optionally:
 #
-# - `mods`: Key modifiers to filter binding actions
+# - `mods`: key modifiers to filter binding actions
 #
-#    - Command
-#    - Control
-#    - Option
-#    - Super
-#    - Shift
-#    - Alt
+#    - command
+#    - control
+#    - option
+#    - super
+#    - shift
+#    - alt
 #
-#    Multiple `mods` can be combined using `|` like this:
-#       `mods: Control|Shift`.
-#    Whitespace and capitalization are relevant and must match the example.
+#    multiple `mods` can be combined using `|` like this:
+#       `mods: control|shift`.
+#    whitespace and capitalization are relevant and must match the example.
 #
-# - `mode`: Indicate a binding for only specific terminal reported modes
+# - `mode`: indicate a binding for only specific terminal reported modes
 #
-#    This is mainly used to send applications the correct escape sequences
+#    this is mainly used to send applications the correct escape sequences
 #    when in different modes.
 #
-#    - AppCursor
-#    - AppKeypad
-#    - Alt
+#    - appcursor
+#    - appkeypad
+#    - alt
 #
-#    A `~` operator can be used before a mode to apply the binding whenever
-#    the mode is *not* active, e.g. `~Alt`.
+#    a `~` operator can be used before a mode to apply the binding whenever
+#    the mode is *not* active, e.g. `~alt`.
 #
-# Bindings are always filled by default, but will be replaced when a new
-# binding with the same triggers is defined. To unset a default binding, it can
-# be mapped to the `ReceiveChar` action. Alternatively, you can use `None` for
+# bindings are always filled by default, but will be replaced when a new
+# binding with the same triggers is defined. to unset a default binding, it can
+# be mapped to the `receivechar` action. alternatively, you can use `none` for
 # a no-op if you do not wish to receive input characters for that binding.
 key_bindings:
-    # (Windows, Linux, and BSD only)
-  - { key: V,         mods: Control|Shift, action: Paste                       }
-  - { key: C,         mods: Control|Shift, action: Copy                        }
-  - { key: Insert,    mods: Shift,         action: PasteSelection              }
-  - { key: Key0,      mods: Control,       action: ResetFontSize               }
-  - { key: Equals,    mods: Control,       action: IncreaseFontSize            }
-  - { key: Plus,      mods: Control,       action: IncreaseFontSize            }
-  - { key: Minus,     mods: Control,       action: DecreaseFontSize            }
-  - { key: F11,       mods: None,          action: ToggleFullscreen            }
-  - { key: Paste,     mods: None,          action: Paste                       }
-  - { key: Copy,      mods: None,          action: Copy                        }
-  - { key: L,         mods: Control,       action: ClearLogNotice              }
-  - { key: L,         mods: Control,       chars: "\x0c"                       }
-  - { key: PageUp,    mods: None,          action: ScrollPageUp,   mode: ~Alt  }
-  - { key: PageDown,  mods: None,          action: ScrollPageDown, mode: ~Alt  }
-  - { key: Home,      mods: Shift,         action: ScrollToTop,    mode: ~Alt  }
-  - { key: End,       mods: Shift,         action: ScrollToBottom, mode: ~Alt  }
+    # (windows, linux, and bsd only)
+  - { key: v,         mods: control|shift, action: paste                       }
+  - { key: c,         mods: control|shift, action: copy                        }
+  - { key: insert,    mods: shift,         action: pasteselection              }
+  - { key: key0,      mods: control,       action: resetfontsize               }
+  - { key: equals,    mods: control,       action: increasefontsize            }
+  - { key: plus,      mods: control,       action: increasefontsize            }
+  - { key: minus,     mods: control,       action: decreasefontsize            }
+  - { key: f11,       mods: none,          action: togglefullscreen            }
+  - { key: paste,     mods: none,          action: paste                       }
+  - { key: copy,      mods: none,          action: copy                        }
+  - { key: l,         mods: control,       action: clearlognotice              }
+  - { key: pageup,    mods: none,          action: scrollpageup,   mode: ~alt  }
+  - { key: pagedown,  mods: none,          action: scrollpagedown, mode: ~alt  }
+  - { key: home,      mods: shift,         action: scrolltotop,    mode: ~alt  }
+  - { key: end,       mods: shift,         action: scrolltobottom, mode: ~alt  }
 
