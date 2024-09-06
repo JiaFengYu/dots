@@ -1,4 +1,8 @@
 # dots
+Wayland 4k (July 2024)
+![2024-07-23_17-15-16](https://github.com/user-attachments/assets/e917c6cb-5c10-4113-a2f2-471729bdcf80)
+
+
 NEW DOTS ON WAYLAND - SWAY (Nov 2023):
 ![2023-11-13_19-29-54](https://github.com/JiaFengYu/dots/assets/48167665/0faa338f-66ea-461f-a7e8-37cabd286b99)
 ![2023-11-13_19-30-38](https://github.com/JiaFengYu/dots/assets/48167665/66f7c130-2d3c-4751-9548-6fd4156037ee)
