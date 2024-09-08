@@ -11,9 +11,9 @@ if echo "$output_info" | jq -e '.[] | select(.name == "DP-3")' > /dev/null; then
         #swaybg -i /home/jiafengyu/Wallpapers/nasa.png -m fill -o DP-3
         swaymsg output eDP-1 disable
         echo "DP-3 set to 4K resolution (3840x2160 @ 59.997 Hz)"
-    elif echo "$available_modes" | grep -q '1920x1080@144001'; then
+    elif echo "$available_modes" | grep -q '1920x1080@164917'; then
         # If 1080p mode is available, set DP-3 to 1080p resolution
-        swaymsg output DP-3 mode 1920x1080@144.001Hz
+        swaymsg output DP-3 mode 1920x1080@164917Hz
         #swaybg -i /home/jiafengyu/Wallpapers/nasa.png -m fill -o DP-3
         swaymsg output DP-3 scale 0.75
         swaymsg output eDP-1 disable
