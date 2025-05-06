@@ -28,10 +28,14 @@ font pango:Source Code Pro 12
 #output * bg /home/jiafengyu/Wallpapers/real_moon.jpg fill
 exec waybar
 exec --no-startup-id gammastep
-exec swaybg -i /home/jiafengyu/Wallpapers/real_moon.jpg -m fill
+exec Xwayland
+exec swaybg -i /home/jiafengyu/Wallpapers/real_moon.jpg -m fill -o eDP-1
 exec --no-startup-id alacritty
-output eDP-1 scale 1.55
+output eDP-1 scale 1.18
+exec --no-startup-id /home/jiafengyu/20-20-20.sh
 
+# for dolphin to work properly??
+exec env XDG_MENU_PREFIX=arch- kbuildsycoca6
 
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
@@ -39,9 +43,17 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ to
 # bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 bindsym $mod+Shift+S exec grimshot copy area
 bindsym Ctrl+Print exec grimshot save screen ~/Pictures/$(date +'%Y-%m-%d_%H-%M-%S').png
-bindsym $mod+Shift+m exec /home/jiafengyu/external_monitor_wayland.sh
+bindsym $mod+Shift+m exec /home/jiafengyu/monitor.sh
 bindsym XF86MonBrightnessUp exec brightnessctl set 5%+
 bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
+
+# output DP-3 {
+#     mode {
+#         1920x1080@165Hz 
+#         3840x2160@60Hz 
+#     }
+# }
+
 
 #
 # Example configuration:
@@ -230,7 +242,8 @@ set $opacity 0.85
 # for_window [class=".*"] opacity $opacity
 for_window [app_id=".*"] opacity $opacity
 for_window [app_id="google-chrome"] opacity 1
-for_window [app_id="mirage"] opacity 1
+for_window [app_id="firefox"] opacity 1
+
 for_window [app_id="org.matplotlib.Matplotlib3"] opacity 1
 #
 # Status Bar:
@@ -263,4 +276,5 @@ input "type:touchpad" {
     pointer_accel 0.50
     natural_scroll disabled
 }
+
 include /etc/sway/config.d/*
