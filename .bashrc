@@ -11,13 +11,17 @@ fi
 
 PS1='[\u@\h \W]\$ '
 
-
 source "$HOME/.cargo/env"
-source /usr/share/fzf/completion.bash
-source /usr/share/fzf/key-bindings.bash
+source "$HOME/.profile"
+#source /usr/share/fzf/completion.bash
+# source /usr/share/fzf/key-bindings.bash
 # source /etc/profile.d/vte.sh
 eval "$(starship init bash)"
 eval "$(zoxide init bash)"
+
+pdf() {
+    zathura "$1" >/dev/null 2>&1 & disown
+}
 
 # alias ls=exa # exa slower...
 alias ls='ls --color=auto'
@@ -25,23 +29,26 @@ alias ll='ls -l'
 alias la='ls -a'
 alias nf=neofetch
 alias cl=clear
-alias pdf=zathura
 alias vi=nvim
 alias vim=nvim
 alias cd=z
 alias cat=bat
-alias top="btm --color gruvbox" # this acronym...
+alias top="btm --theme gruvbox" # this acronym...
 alias charge="upower -i /org/freedesktop/UPower/devices/battery_BAT1"
-alias grep=rg
+alias grep="rg --max-depth 1"
 alias find="fd -d 1"
 alias diff=delta
-alias yay=paru
+# alias yay=paru
 alias yeet="paru -Rcs"
 alias count="ls -1 | wc -l"
 alias shutdown="shutdown now"
 alias copy="wl-copy"
 alias paste="wl-paste"
 alias fn="echo 'the fn sing a song like its the leader of a soul crew' && cvlc fn.mp3"
+alias cmatrix="cmatrix -C blue"
+alias convert_to_jpg="mogrify -format jpg"
+alias airpods_connect="bluetoothctl connect 68:3E:C0:BF:57:D7"
+alias airpods_disconnect="bluetoothctl disconnect 68:3E:C0:BF:57:D7"
 #alias getpid="xprop _NET_WM_PID | sed 's/_NET_WM_PID(CARDINAL) = //' | ps `cat`"
 
 export PATH="~/.local/bin:$PATH"
@@ -52,3 +59,24 @@ export XMODIFIERS=@im=ibus
 export QT_IM_MODULE=ibus
 export EDITOR=nvim
 export TERMINAL=alacritty
+export XDG_MENU_PREFIX=arch- kbuildsycoca6
+
+test -r '/home/jiafengyu/.opam/opam-init/init.sh' && . '/home/jiafengyu/.opam/opam-init/init.sh' > /dev/null 2> /dev/null || true
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/usr/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/usr/etc/profile.d/conda.sh" ]; then
+        . "/usr/etc/profile.d/conda.sh"
+    else
+        export PATH="/usr/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
+export ANTHROPIC_API_KEY=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
+export PATH="$HOME/.npm-global/bin:$PATH"
