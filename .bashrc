@@ -4,17 +4,22 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+# Expand correctly by avoiding quotes or using $HOME explicitly
+export PATH="$HOME/.local/bin:$PATH"
+export PATH="$PATH:/usr/local/go/bin"
+export PATH="$HOME/.npm-global/bin:$PATH"
+
 if [ -f /etc/bash_completion ]; then
-    /etc/bash_completion
+    source /etc/bash_completion
 fi
 
 PS1='[\u@\h \W]\$ '
 
-source "$HOME/.cargo/env"
-source "$HOME/.profile"
-#source /usr/share/fzf/completion.bash
-# source /usr/share/fzf/key-bindings.bash
-# source /etc/profile.d/vte.sh
+# Always make sure $HOME/.cargo/env exists before sourcing
+[ -f "$HOME/.cargo/env" ] && source "$HOME/.cargo/env"
+# Only source profile if needed (you can skip if not using it explicitly)
+# [ -f "$HOME/.profile" ] && source "$HOME/.profile"
+
 eval "$(starship init bash)"
 eval "$(zoxide init bash)"
 
@@ -50,14 +55,10 @@ alias airpods_connect="bluetoothctl connect 68:3E:C0:BF:57:D7"
 alias airpods_disconnect="bluetoothctl disconnect 68:3E:C0:BF:57:D7"
 #alias getpid="xprop _NET_WM_PID | sed 's/_NET_WM_PID(CARDINAL) = //' | ps `cat`"
 
-export PATH="~/.local/bin:$PATH"
 #export PATH=$HOME/sys161/bin:$HOME/sys161/tools/bin:$PATH
-export PATH=$PATH:/usr/local/go/bin
 export GTK_IM_MODULE=ibus
 export XMODIFIERS=@im=ibus
 export QT_IM_MODULE=ibus
 export EDITOR=nvim
 export TERMINAL=alacritty
 export XDG_MENU_PREFIX=arch- kbuildsycoca6
-
-export PATH="$HOME/.npm-global/bin:$PATH"
