@@ -78,5 +78,4 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
-export ANTHROPIC_API_KEY=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
 export PATH="$HOME/.npm-global/bin:$PATH"
