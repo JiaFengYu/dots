@@ -31,6 +31,7 @@ pdf() {
 alias ls='ls --color=auto'
 alias ll='ls -l'
 alias la='ls -a'
+alias rm='rm -i --preserve-root'
 alias nf=neofetch
 alias cl=clear
 alias vi=nvim
@@ -62,3 +63,4 @@ export QT_IM_MODULE=ibus
 export EDITOR=nvim
 export TERMINAL=alacritty
 export XDG_MENU_PREFIX=arch- kbuildsycoca6
+export HYPRSHOT_DIR="$HOME/Pictures/"
