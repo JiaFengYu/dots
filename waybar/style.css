@@ -28,8 +28,9 @@ tooltip label {
 }
 
 #workspaces button.focused {
-    background: rgba(19, 132, 255, 0.6);
-    border-bottom: 2px solid rgba(19, 132, 255, 0.8);
+    /* background: rgba(19, 132, 255, 0.6);
+     border-bottom: 2px solid rgba(19, 132, 255, 0.8); */
+    color: rgba(60, 180, 255, 0.99);
 }
 
 #clock {
