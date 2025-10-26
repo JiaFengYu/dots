@@ -7,7 +7,7 @@
 ### Variables
 #
 # Logo key. Use Mod1 for Alt.
-set $mod Mod1
+set $mod Ctrl
 # Home row direction keys, like vim
 set $left j
 set $down k
@@ -99,10 +99,10 @@ bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
 
 
     # Kill focused window
-    bindsym Ctrl+d kill
+    bindsym Alt+d kill
 
     # Start your launcher
-    bindsym $mod+d exec --no-startup-id rofi -show run
+    bindsym Ctrl+d exec --no-startup-id rofi -show run
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
@@ -127,10 +127,6 @@ bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
     bindsym $mod+$up focus up
     bindsym $mod+$right focus right
     # Or use $mod+[up|down|left|right]
-    bindsym $mod+Left focus left
-    bindsym $mod+Down focus down
-    bindsym $mod+Up focus up
-    bindsym $mod+Right focus right
 
     # Move the focused window with the same, but add Shift
     bindsym $mod+Shift+$left move left
@@ -142,6 +138,9 @@ bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
     bindsym $mod+Shift+Down move down
     bindsym $mod+Shift+Up move up
     bindsym $mod+Shift+Right move right
+    # Move between workspaces like macOS
+    bindsym Alt+Right workspace next
+    bindsym Alt+Left workspace prev
 #
 # Workspaces:
 #
@@ -176,13 +175,13 @@ bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
     # You can "split" the current object of your focus with
     # $mod+b or $mod+v, for horizontal and vertical splits
     # respectively.
-    bindsym $mod+b splith
-    bindsym $mod+v splitv
+    bindsym $mod+Shift+b splith
+    bindsym $mod+Shift+v splitv
 
     # Switch the current container between different layout styles
-    bindsym $mod+s layout stacking
-    bindsym $mod+w layout tabbed
-    bindsym $mod+e layout toggle split
+    # bindsym $mod+s layout stacking
+    # bindsym $mod+w layout tabbed
+    # bindsym $mod+e layout toggle split
 
     # Make the current focus fullscreen
     bindsym $mod+f fullscreen
@@ -194,7 +193,7 @@ bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
     bindsym $mod+space focus mode_toggle
 
     # Move focus to the parent container
-    bindsym $mod+a focus parent
+    bindsym $mod+Shift+a focus parent
 #
 # Scratchpad:
 #
