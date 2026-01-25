@@ -1,6 +1,3 @@
-# alacritty.toml
-
-live_config_reload = true
 
 [env]
 TERM = "xterm-256color"
@@ -32,9 +29,6 @@ size                = 13.0
 family = "source code pro"
 style  = "Bold"
 
-[font.bold_italic]
-family = "source code pro"
-style  = "Bold Italic"
 
 [font.glyph_offset]
 x = 0
@@ -160,7 +154,7 @@ mods   = "Shift"
 [[keyboard.bindings]]
 action = "SpawnNewInstance"
 key    = "Return"
-mods   = "Alt|Shift"
+mods   = "Control|Shift"
 
 [mouse]
 hide_when_typing = true
@@ -171,3 +165,8 @@ log_level          = "Warn"
 persistent_logging = false
 print_events       = false
 render_timer       = false
+
+#[general]
+# alacritty.toml
+
+#live_config_reload = true

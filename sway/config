@@ -8,8 +8,7 @@
 #
 # Logo key. Use Mod1 for Alt.
 set $mod Ctrl
-# Home row direction keys, like vim
-set $left j
+# Home row direction keys, like vim set $left j
 set $down k
 set $up l
 set $right semicolon
@@ -112,32 +111,32 @@ bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
     floating_modifier $mod normal
 
     # reload the configuration file
-    bindsym $mod+Shift+c reload
+    bindsym $mod+Shift+e reload
     # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
     bindsym $mod+Shift+r restart
 
     # Exit sway (logs you out of your Wayland session)
-    bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
+    bindsym $mod+Shift+q exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
 #
 # Moving around:
 #
     # Move your focus around
-    bindsym $mod+$left focus left
-    bindsym $mod+$down focus down
-    bindsym $mod+$up focus up
-    bindsym $mod+$right focus right
+    bindsym Ctrl+j focus left
+    bindsym Ctrl+k focus down
+    bindsym Ctrl+l focus up
+    bindsym Ctrl+semicolon focus right
     # Or use $mod+[up|down|left|right]
 
     # Move the focused window with the same, but add Shift
-    bindsym $mod+Shift+$left move left
-    bindsym $mod+Shift+$down move down
-    bindsym $mod+Shift+$up move up
-    bindsym $mod+Shift+$right move right
+    bindsym Ctrl+Shift+j move left
+    bindsym Ctrl+Shift+k move down
+    bindsym Ctrl+Shift+l move up
+    bindsym Ctrl+Shift+semicolon move right
     # Ditto, with arrow keys
-    bindsym $mod+Shift+Left move left
-    bindsym $mod+Shift+Down move down
-    bindsym $mod+Shift+Up move up
-    bindsym $mod+Shift+Right move right
+    bindsym Ctrl+Shift+Left move left
+    bindsym Ctrl+Shift+Down move down
+    bindsym Ctrl+Shift+Up move up
+    bindsym Ctrl+Shift+Right move right
     # Move between workspaces like macOS
     bindsym Alt+Right workspace next
     bindsym Alt+Left workspace prev
@@ -176,7 +175,7 @@ bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
     # $mod+b or $mod+v, for horizontal and vertical splits
     # respectively.
     bindsym $mod+Shift+b splith
-    bindsym $mod+Shift+v splitv
+    bindsym $mod+Shift+n splitv
 
     # Switch the current container between different layout styles
     # bindsym $mod+s layout stacking
@@ -184,7 +183,7 @@ bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
     # bindsym $mod+e layout toggle split
 
     # Make the current focus fullscreen
-    bindsym $mod+f fullscreen
+    bindsym $mod+Shift+f fullscreen
 
     # Toggle the current focus between tiling and floating mode
     bindsym $mod+Shift+space floating toggle
@@ -214,10 +213,10 @@ mode "resize" {
     # right will grow the containers width
     # up will shrink the containers height
     # down will grow the containers height
-    bindsym $left resize shrink width 10px
-    bindsym $down resize grow height 10px
-    bindsym $up resize shrink height 10px
-    bindsym $right resize grow width 10px
+    bindsym j resize shrink width 10px
+    bindsym n resize grow height 10px
+    bindsym l resize shrink height 10px
+    bindsym semicolon resize grow width 10px
 
     # Ditto, with arrow keys
     bindsym Left resize shrink width 10px
@@ -277,3 +276,4 @@ input "type:touchpad" {
 }
 
 include /etc/sway/config.d/*
+
